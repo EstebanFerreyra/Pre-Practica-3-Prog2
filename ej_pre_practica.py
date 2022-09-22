@@ -11,7 +11,7 @@ ruedas y "Motocicleta" si posee 2 ruedas.<br />
 import string
 
 class Vehiculo:
-    def __init__(self, marca, ruedas, color, enMarcha) -> None:
+    def __init__(self, marca: str, ruedas: int, color: str, enMarcha: bool) -> None:
         self.marca = marca
         self.ruedas = ruedas
         self.color = color
@@ -21,7 +21,7 @@ class Vehiculo:
         self.enMarcha = True
 
     def tipoVehiculo(self) -> string:
-        tipo_vehiculo = 0
+        tipo_vehiculo = " "
         
         if self.ruedas == 4:
             tipo_vehiculo =  "Automovil"
@@ -42,7 +42,8 @@ v11.arracar()
 v11.mostrar()
 print(v11.tipoVehiculo())
 
-lucho = Vehiculo("Luchito", 2, "Negro", False)
+"""lucho = Vehiculo("Luchito", 2, "Negro", False)
 lucho.arracar()
 lucho.mostrar()
 print(lucho.tipoVehiculo())
+"""
